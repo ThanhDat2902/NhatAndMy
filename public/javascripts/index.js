@@ -30,9 +30,7 @@ function initializeClock(id, endtime){
     daysSpan.innerHTML = ('0' + t.days).slice(-2);
     hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
     minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
-    if (screen.width>=641) {
-      secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
-    }
+    secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
 
     if(t.total<=0){
       clearInterval(timeinterval);
