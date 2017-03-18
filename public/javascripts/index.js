@@ -21,9 +21,7 @@ function initializeClock(id, endtime){
   var daysSpan = document.getElementById('days');
   var hoursSpan = document.getElementById('hours');
   var minutesSpan = document.getElementById('minutes');
-  if (screen.width>=641) {
-    var secondsSpan = document.getElementById('seconds');
-  }
+  var secondsSpan = document.getElementById('seconds');
 
   function updateClock(){
     var t = getTimeRemaining(endtime);
